@@ -5,20 +5,20 @@
 class Goreltest < Formula
   desc ""
   homepage "https://github.com/bradyjoslin"
-  version "0.3"
+  version "0.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/bradyjoslin/goreltest/releases/download/v0.3/goreltest_Darwin_x86_64.tar.gz"
-      sha256 "4e52c3d67a9a0ee4df71b74331794be6bdcfef4ae0cd749591d21f1d253dea68"
+      url "https://github.com/bradyjoslin/goreltest/releases/download/v0.4/goreltest_Darwin_x86_64.tar.gz"
+      sha256 "f3c8c36cc47e31b5096570e01ec5ccac0ebee78862ada7527d05e436fd66cef0"
 
       def install
         bin.install "goreltest"
       end
     end
     on_arm do
-      url "https://github.com/bradyjoslin/goreltest/releases/download/v0.3/goreltest_Darwin_arm64.tar.gz"
-      sha256 "0a8313c3625a5b8875685e48618dd2350188ee9f5deabd434243ee2fee3a650f"
+      url "https://github.com/bradyjoslin/goreltest/releases/download/v0.4/goreltest_Darwin_arm64.tar.gz"
+      sha256 "9ce4135f004745f309ec6cd92e5fe2169d4a8979aad35b6de10d6413b273afbe"
 
       def install
         bin.install "goreltest"
@@ -29,8 +29,8 @@ class Goreltest < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bradyjoslin/goreltest/releases/download/v0.3/goreltest_Linux_x86_64.tar.gz"
-        sha256 "3dd0d29692ff82f46bf5935e85f84e87e91e60c4cf4fedfbf24a6fdd8df2d5b9"
+        url "https://github.com/bradyjoslin/goreltest/releases/download/v0.4/goreltest_Linux_x86_64.tar.gz"
+        sha256 "d0f45abe3148a04904a48afbd92e57aac8f55c92d370ba00187194d65314eaa5"
 
         def install
           bin.install "goreltest"
@@ -39,8 +39,8 @@ class Goreltest < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bradyjoslin/goreltest/releases/download/v0.3/goreltest_Linux_arm64.tar.gz"
-        sha256 "a33383309a8b8ceb7659eb63a4518377640cb3dcb0feb9598601af20ce7d36dc"
+        url "https://github.com/bradyjoslin/goreltest/releases/download/v0.4/goreltest_Linux_arm64.tar.gz"
+        sha256 "8771e7027a43c4a3bf89870cb1ee4cc26a1c29ffb454ffd84706545bd9714c95"
 
         def install
           bin.install "goreltest"
